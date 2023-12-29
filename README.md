@@ -1,7 +1,8 @@
 Installation
 
 For UI:  
--pip install customtkinter
+-pip install customtkinter  
+-pip install CTkMessagebox
 
 For Model: 
 
