@@ -6,15 +6,19 @@ from PIL import Image
 import subprocess
 import importlib.util
 import model
+import ctypes
 
 class MyGUI():
     def __init__(self):
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme('blue')
+        myappid = "Iris Model"
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
         app = ctk.CTk()
         app.geometry("720x500")
         app.title("Iris Model")
+        app.iconbitmap("assets/icone_program.ico")
 
         app.columnconfigure((0,2), weight=2)
         #app.columnconfigure((,4), weight=3)
@@ -26,7 +30,7 @@ class MyGUI():
         home_frame=ctk.CTkFrame(app,corner_radius=30)
         label_page=ctk.CTkLabel(home_frame, text="Iris Model", font=("Arial", 26))
         label_page.grid_configure(column=1, row=0, padx=20,)
-        home_image=Image.open("home.png")
+        home_image=Image.open("assets/home.png")
         home=ctk.CTkLabel(home_frame, image=ctk.CTkImage(home_image, size=(100,100)),)
         home.grid_configure(column=0, row=0)
         
@@ -44,7 +48,7 @@ class MyGUI():
         label_insert=ctk.CTkLabel(file_frame, text="Insert a CSV file", font=("Arial", 18)) #Text 
         label_insert.grid_configure(row=1, column=0, sticky='ew',  padx=20, pady=20)
         #Import Button
-        file_image=Image.open("icon.png")
+        file_image=Image.open("assets/icon.png")
         self.file_path = tk.StringVar()
         btn_insert=ctk.CTkButton(file_frame, text="Import", font=("Arial", 18), image=ctk.CTkImage(dark_image=file_image, size=(20,20)), compound="top", command=self.browse_file)
         btn_insert.grid_configure(row=2, column=0, sticky='we', padx=20, ipady=2)
