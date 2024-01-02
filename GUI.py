@@ -16,12 +16,12 @@ class MyGUI():
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
         app = ctk.CTk()
-        app.geometry("720x500")
+        app.geometry("800x500")
         app.title("Iris Model")
         app.iconbitmap("assets/icone_program.ico")
 
-        app.columnconfigure((0,2), weight=2)
-        #app.columnconfigure((,4), weight=3)
+        app.columnconfigure(0, weight=2)
+        #app.columnconfigure(2, weight=1)
         app.columnconfigure(1, weight=6)
         app.rowconfigure(3, weight=1)
         app.rowconfigure((0,2), weight=2)
@@ -57,13 +57,12 @@ class MyGUI():
         self.label = ctk.CTkLabel(file_frame, textvariable=self.file_path)
         self.label.grid_configure(row=3, column=0, sticky="we", padx=10, pady=10)
         
-        file_frame.grid_configure(row=2, column=0, )#sticky="ns")
+        file_frame.grid_configure(row=2, column=0, padx=10)#sticky="ns")
 
 
         #Result Button
         btn_result=ctk.CTkButton(app, text="Result", font=("Arial", 18), command=self.show_result)
-        #btn_result.place(relx=200,rely=200, anchor="center")
-        btn_result.grid_configure(row=3, columnspan=3, sticky="ew", padx=200)
+        btn_result.grid_configure(row=3, columnspan=3, padx=200, pady=20, ipady=5, ipadx=50)#sticky="ew")
 
         #---- Frame Model -----
         model_frame= ctk.CTkFrame(app, height=50, corner_radius=10)
@@ -75,14 +74,16 @@ class MyGUI():
         text=ctk.CTkLabel(model_frame, text="Choose an algorithm", font=("Arial", 14))
         text.grid_configure(row=0,column=0, padx=10, pady=3)
 
-        self.list= ctk.CTkComboBox(model_frame, values=["SVM","TensorFlow","KNN"],command=self.change_option)
+        self.list= ctk.CTkComboBox(model_frame, values=["SVM","Tensorflow","KNN"],command=self.change_option)
         self.list.grid_configure(row=0, column=1)
         
         #DropDown Kernel Option
-        textOption=ctk.CTkLabel(model_frame, text="Choose Options", font=("Arial", 14))
-        textOption.grid_configure(row=1,column=0, padx=10, pady=3)
+        self.textOption=ctk.StringVar(value="Choose the type of kernel")
+        self.labelOption=ctk.CTkLabel(model_frame, textvariable=self.textOption, font=("Arial", 14))
+        self.labelOption.grid_configure(row=1,column=0, padx=10, pady=3)
         self.svm_values=["Linear","Rbf","Sigmoid"]
-        self.option_list= ctk.CTkComboBox(model_frame, values=self.svm_values, command=self.change_option)
+        self.option_var=ctk.StringVar(value=self.svm_values[0])
+        self.option_list= ctk.CTkComboBox(model_frame, values=self.svm_values, variable=self.option_var,command=self.change_var)
         self.option_list.grid_configure(row=1, column=1, pady=20)
 
         self.pourcentage=ctk.IntVar()
@@ -96,42 +97,38 @@ class MyGUI():
         #Result Label
         self.result = tk.StringVar()
         
-        #self.result_label = ctk.CTkLabel(app, textvariable=self.result)
-        #self.result_label.grid_configure(row=3, column=1)
-        
-        #buttonframe= tk.Frame(app)
-        #buttonframe.columnconfigure(0, weight=1)
-        #buttonframe.columnconfigure(1, weight=1)
-        #buttonframe.columnconfigure(2, weight=1)
-
-        #buttonframe.pack(fill="x") #prend toute la largeur X 
-
-        #valuecheck = tk.IntVar() # valeur de checkBox
-        #check = tk.Checkbutton(app, text="Show", font=("Arial", 16), variable=self.valuecheck)
-        #check.pack(padx=10, pady=10)
-
-        
-
         app.mainloop()
     
-    def show_message(self, value):
-        #if valuecheck.get() == 0:
-        #print("Test")
-        #else:
-        #messagebox.showinfo(title="Message", message=self.algorithm.get())
+    def show_message(self):
+        # To change text in left of slider
         self.text_slider.configure(text="%d %% of Training Dataset" % (self.slider.get()*100))
     
+    def change_var(self, value):
+        # To display the value clicked
+        self.option_var.set(value)
+        print(value)
+
     def change_option(self, value):
         algorithm=self.list.get()
         print(f"Selected Model: {value}")
         if algorithm == "SVM":
-            
+            #To change value of Option Menu
             self.option_list.configure(values=self.svm_values)
-            #self.option_list.set("")
+            #To display the first value of The List 
+            self.option_var.set(self.svm_values[0])
+            #To change the text 
+            self.textOption.set("Choose the type of kernel")
+            #To change the state
+            self.option_list.configure(state="normal")
         elif algorithm == "KNN":
             knn_values=["1","3","5","7","9"]
             self.option_list.configure(values=knn_values)
-            #self.option_list.set("")
+            self.option_var.set(knn_values[0])
+            self.textOption.set("Choose the number of neighbour")
+            self.option_list.configure(state="normal")
+        elif algorithm == "Tensorflow":
+            self.option_list.configure(state="disabled")
+            print("TensorFlow Selected")
         else:
             print("Error")
 
@@ -142,35 +139,39 @@ class MyGUI():
         if not file_path:
             error="Error: No file selected."
             self.file_path.set(error)
-            print(error)
+            self.label.configure(text_color="red")
             return
 
         # Check if the file has a .csv extension
         if not file_path.lower().endswith('.csv'):
             error="Error: It isn't a CSV file"
             self.file_path.set(error)
-            print(error)
+            self.label.configure(text_color="yellow")
         else:
             self.file_path.set(file_path)
+            self.label.configure(text_color="white")
 
         
     def show_result(self):
         # Get the model choosed
         algorithm=self.list.get()
+        # Get the option choosed (2 DropDown)
         option=self.option_list.get()
+        # Get the percentage
         self.pourcentage=round(1-self.slider.get(),2)
         print("Pourcentage: ",self.pourcentage)
-        print(self.file_path.get())
         if algorithm == "SVM":
             accuracy_result=model.svm(self.pourcentage, option.lower())
         elif algorithm == "KNN":
             accuracy_result=model.knn(self.pourcentage, int(option))
+        elif algorithm == "Tensorflow":
+            option="None"
+            accuracy_result=0
         else:
             print("Error")
-        # Display the accuracy
-        self.result.set(f"Algorithm: {algorithm}\nOption: {option}\nPourcentage: {self.pourcentage}\nAccuracy = {accuracy_result*100:.2f}%")
+        #Display the Result
+        self.result.set(f"Algorithm: {algorithm}\nOption: {option}\nTesting Set Pourcentage: {self.pourcentage*100}%\n\nAccuracy = {accuracy_result*100:.2f}%")
+        #Display The Box with Result
         CTkMessagebox(title="Result of ML", message=self.result.get(), icon="check")
-        #print("Selected File Path:", self.file_path.get())
 
 MyGUI()
-
