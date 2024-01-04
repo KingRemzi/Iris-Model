@@ -31,7 +31,7 @@ class MyGUI():
         label_page=ctk.CTkLabel(home_frame, text="Iris Model", font=("Arial", 26))
         label_page.grid_configure(column=1, row=0, padx=20,)
         home_image=Image.open("assets/home.png")
-        home=ctk.CTkLabel(home_frame, image=ctk.CTkImage(home_image, size=(100,100)),)
+        home=ctk.CTkLabel(home_frame, text=None, image=ctk.CTkImage(home_image, size=(100,100)),)
         home.grid_configure(column=0, row=0)
         
         home_frame.grid_configure(row=0, columnspan=3, sticky="ew", padx=200)
@@ -67,31 +67,41 @@ class MyGUI():
         #---- Frame Model -----
         model_frame= ctk.CTkFrame(app, height=50, corner_radius=10)
         model_frame.columnconfigure(0, weight=1)
-        model_frame.columnconfigure(1, weight=2)
-        model_frame.rowconfigure((0,1,2), weight=1)
+        model_frame.columnconfigure((1,2), weight=2)
+        model_frame.rowconfigure((0,1,2,3), weight=1)
+
+        labelradio=ctk.CTkLabel(model_frame, text="Choose Settings:", font=("Arial", 14))
+        self.radio_var=ctk.StringVar()
+        #Radio Button
+        self.radio1=ctk.CTkRadioButton(model_frame, text="Simple (Best Settings)", variable=self.radio_var, value="simple", command=self.radio)
+        self.radio2=ctk.CTkRadioButton(model_frame, text="Custom", variable=self.radio_var, value="custom",command=self.radio)
+        labelradio.grid_configure(row=0, column=0)
+        self.radio1.grid_configure(row=0,column=1, padx=15)
+        self.radio2.grid_configure(row=0,column=2)
 
         #DropDown Model    
         text=ctk.CTkLabel(model_frame, text="Choose an algorithm", font=("Arial", 14))
-        text.grid_configure(row=0,column=0, padx=10, pady=3)
+        text.grid_configure(row=1,column=0, padx=10, pady=3)
 
-        self.list= ctk.CTkComboBox(model_frame, values=["SVM","Tensorflow","KNN"],command=self.change_option)
-        self.list.grid_configure(row=0, column=1)
+        #"Tensorflow",
+        self.list= ctk.CTkComboBox(model_frame, values=["SVM","KNN"],command=self.change_option)
+        self.list.grid_configure(row=1, column=1, columnspan=2)
         
         #DropDown Kernel Option
         self.textOption=ctk.StringVar(value="Choose the type of kernel")
         self.labelOption=ctk.CTkLabel(model_frame, textvariable=self.textOption, font=("Arial", 14))
-        self.labelOption.grid_configure(row=1,column=0, padx=10, pady=3)
+        self.labelOption.grid_configure(row=2,column=0, padx=10, pady=3)
         self.svm_values=["Linear","Rbf","Sigmoid"]
         self.option_var=ctk.StringVar(value=self.svm_values[0])
         self.option_list= ctk.CTkComboBox(model_frame, values=self.svm_values, variable=self.option_var,command=self.change_var)
-        self.option_list.grid_configure(row=1, column=1, pady=20)
+        self.option_list.grid_configure(row=2, column=1, columnspan=2, pady=20)
 
         self.pourcentage=ctk.IntVar()
         
         self.slider=ctk.CTkSlider(model_frame, from_=0.5, to=0.9, number_of_steps=4, command=self.show_message)
-        self.slider.grid_configure(column=1, row=2)
+        self.slider.grid_configure(column=1, row=3, columnspan=2)
         self.text_slider=ctk.CTkLabel(model_frame, text="%d %% of Training Dataset" % (self.slider.get()*100))
-        self.text_slider.grid_configure(row=2, column=0)
+        self.text_slider.grid_configure(row=3, column=0)
         model_frame.grid_configure(row=2, column=1, ipady=20, ipadx=5)
         
         #Result Label
@@ -99,14 +109,27 @@ class MyGUI():
         
         app.mainloop()
     
-    def show_message(self):
+    def show_message(self, value):
         # To change text in left of slider
-        self.text_slider.configure(text="%d %% of Training Dataset" % (self.slider.get()*100))
+        self.text_slider.configure(text="%d %% of Training Dataset" % (value*100))
     
+    def radio(self):
+        # To get radio button value
+        if self.radio_var.get() == "simple":
+            self.option_var.set(value="Rbf")
+            self.option_list.configure(state="disabled")
+            self.list.set('SVM')
+            self.list.configure(state="disabled")
+            self.slider.set(0.6)
+            self.slider.configure(state="disabled")
+        elif self.radio_var.get() == "custom":
+            self.slider.configure(state="normal")
+            self.list.configure(state="normal")
+            self.option_list.configure(state="normal")
+
     def change_var(self, value):
         # To display the value clicked
         self.option_var.set(value)
-        print(value)
 
     def change_option(self, value):
         algorithm=self.list.get()

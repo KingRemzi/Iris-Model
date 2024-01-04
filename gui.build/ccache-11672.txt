@@ -1,0 +1,453 @@
+[2024-01-04T14:09:19.217296 14316] === CCACHE 4.8.2 STARTED =========================================
+[2024-01-04T14:09:19.217410 14316] Configuration file: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-01-04T14:09:19.217440 14316] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-01-04T14:09:19.217343 14068] === CCACHE 4.8.2 STARTED =========================================
+[2024-01-04T14:09:19.217514 14068] Configuration file: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-01-04T14:09:19.217440 14316] Config: (default) absolute_paths_in_stderr = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) base_dir = 
+[2024-01-04T14:09:19.217440 14316] Config: (environment) cache_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-01-04T14:09:19.217440 14316] Config: (default) compiler = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) compiler_check = mtime
+[2024-01-04T14:09:19.217440 14316] Config: (default) compiler_type = auto
+[2024-01-04T14:09:19.217440 14316] Config: (default) compression = true
+[2024-01-04T14:09:19.217440 14316] Config: (default) compression_level = 0
+[2024-01-04T14:09:19.217440 14316] Config: (default) cpp_extension = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) debug = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) debug_dir = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) depend_mode = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) direct_mode = true
+[2024-01-04T14:09:19.217440 14316] Config: (default) disable = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) extra_files_to_hash = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) file_clone = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) hard_link = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) hash_dir = true
+[2024-01-04T14:09:19.217440 14316] Config: (default) ignore_headers_in_manifest = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) ignore_options = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) inode_cache = true
+[2024-01-04T14:09:19.217440 14316] Config: (default) keep_comments_cpp = false
+[2024-01-04T14:09:19.217440 14316] Config: (environment) log_file = D:\Bureau\Dev\TP ML\Iris-Model\gui.build\ccache-11672.txt
+[2024-01-04T14:09:19.217440 14316] Config: (default) max_files = 0
+[2024-01-04T14:09:19.217440 14316] Config: (default) max_size = 5.0 GiB
+[2024-01-04T14:09:19.217440 14316] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-04T14:09:19.217440 14316] Config: (default) namespace = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) path = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) pch_external_checksum = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) prefix_command = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) prefix_command_cpp = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) read_only = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) read_only_direct = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) recache = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) remote_only = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) remote_storage = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) reshare = false
+[2024-01-04T14:09:19.217440 14316] Config: (default) run_second_cpp = true
+[2024-01-04T14:09:19.217440 14316] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-04T14:09:19.217440 14316] Config: (default) stats = true
+[2024-01-04T14:09:19.217440 14316] Config: (default) stats_log = 
+[2024-01-04T14:09:19.217440 14316] Config: (default) temporary_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-01-04T14:09:19.217440 14316] Config: (default) umask = 
+[2024-01-04T14:09:19.217540 14316] Command line: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o __helpers.o -c -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON[2024-01-04T14:09:19.217540 14068] Config: (default) absolute_paths_in_stderr = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) base_dir = 
+[2024-01-04T14:09:19.217540 14068] Config: (environment) cache_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-01-04T14:09:19.217540 14068] Config: (default) compiler = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) compiler_check = mtime
+[2024-01-04T14:09:19.217540 14068] Config: (default) compiler_type = auto
+[2024-01-04T14:09:19.217540 14068] Config: (default) compression = true
+[2024-01-04T14:09:19.217540 14068] Config: (default) compression_level = 0
+[2024-01-04T14:09:19.217540 14068] Config: (default) cpp_extension = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) debug = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) debug_dir = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) depend_mode = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) direct_mode = true
+[2024-01-04T14:09:19.217540 14068] Config: (default) disable = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) extra_files_to_hash = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) file_clone = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) hard_link = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) hash_dir = true
+[2024-01-04T14:09:19.217540 14068] Config: (default) ignore_headers_in_manifest = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) ignore_options = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) inode_cache = true
+[2024-01-04T14:09:19.217540 14068] Config: (default) keep_comments_cpp = false
+[2024-01-04T14:09:19.217540 14068] Config: (environment) log_file = D:\Bureau\Dev\TP ML\Iris-Model\gui.build\ccache-11672.txt
+[2024-01-04T14:09:19.217540 14068] Config: (default) max_files = 0
+[2024-01-04T14:09:19.217540 14068] Config: (default) max_size = 5.0 GiB
+[2024-01-04T14:09:19.217540 14068] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-04T14:09:19.217540 14068] Config: (default) namespace = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) path = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) pch_external_checksum = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) prefix_command = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) prefix_command_cpp = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) read_only = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) read_only_direct = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) recache = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) remote_only = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) remote_storage = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) reshare = false
+[2024-01-04T14:09:19.217540 14068] Config: (default) run_second_cpp = true
+[2024-01-04T14:09:19.217540 14068] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-04T14:09:19.217540 14068] Config: (default) stats = true
+[2024-01-04T14:09:19.217540 14068] Config: (default) stats_log = 
+[2024-01-04T14:09:19.217540 14068] Config: (default) temporary_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-01-04T14:09:19.217540 14068] Config: (default) umask = 
+[2024-01-04T14:09:19.217667 14068] Command line: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o __constants.o -c -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src __constants.c
+[2024-01-04T14:09:19.221473 17812] === CCACHE 4.8.2 STARTED =========================================
+[2024-01-04T14:09:19.221540 17812] Configuration file: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-01-04T14:09:19.221553 17812] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-01-04T14:09:19.221553 17812] Config: (default) absolute_paths_in_stderr = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) base_dir = 
+[2024-01-04T14:09:19.221553 17812] Config: (environment) cache_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-01-04T14:09:19.221553 17812] Config: (default) compiler = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) compiler_check = mtime
+[2024-01-04T14:09:19.221553 17812] Config: (default) compiler_type = auto
+[2024-01-04T14:09:19.221553 17812] Config: (default) compression = true
+[2024-01-04T14:09:19.221553 17812] Config: (default) compression_level = 0
+[2024-01-04T14:09:19.221553 17812] Config: (default) cpp_extension = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) debug = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) debug_dir = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) depend_mode = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) direct_mode = true
+[2024-01-04T14:09:19.221553 17812] Config: (default) disable = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) extra_files_to_hash = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) file_clone = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) hard_link = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) hash_dir = true
+[2024-01-04T14:09:19.221553 17812] Config: (default) ignore_headers_in_manifest = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) ignore_options = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) inode_cache = true
+[2024-01-04T14:09:19.221553 17812] Config: (default) keep_comments_cpp = false
+[2024-01-04T14:09:19.221553 17812] Config: (environment) log_file = D:\Bureau\Dev\TP ML\Iris-Model\gui.build\ccache-11672.txt
+[2024-01-04T14:09:19.221553 17812] Config: (default) max_files = 0
+[2024-01-04T14:09:19.221553 17812] Config: (default) max_size = 5.0 GiB
+[2024-01-04T14:09:19.221553 17812] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-04T14:09:19.221553 17812] Config: (default) namespace = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) path = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) pch_external_checksum = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) prefix_command = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) prefix_command_cpp = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) read_only = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) read_only_direct = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) recache = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) remote_only = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) remote_storage = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) reshare = false
+[2024-01-04T14:09:19.221553 17812] Config: (default) run_second_cpp = true
+[2024-01-04T14:09:19.221553 17812] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-04T14:09:19.221553 17812] Config: (default) stats = true
+[2024-01-04T14:09:19.221553 17812] Config: (default) stats_log = 
+[2024-01-04T14:09:19.221553 17812] Config: (default) temporary_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-01-04T14:09:19.221553 17812] Config: (default) umask = 
+[2024-01-04T14:09:19.221627 17812] Command line: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o __loader.o -c -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src __loader.c
+[2024-01-04T14:09:19.223033 14068] Hostname: DESKTOP-F5GPF02
+[2024-01-04T14:09:19.223050 14316] Hostname: DESKTOP-F5GPF02
+u/Dev/TP ML/Iris-Model/gui.build
+[2024-01-04T14:09:19.223077 14068] Compiler: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-01-04T14:09:19.223088 14068] Compiler type: gcc
+[2024-01-04T14:09:19.223094 14316] Compiler: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-01-04T14:09:19.223102 14316] Compiler type: gcc
+[2024-01-04T14:09:19.223617 14068] Source file: __constants.c
+[2024-01-04T14:09:19.223632 14068] Object file: __constants.o
+[2024-01-04T14:09:19.223653 14316] Source file: __helpers.c
+[2024-01-04T14:09:19.223671 14316] Object file: __helpers.o
+[2024-01-04T14:09:19.223876 14068] Trying direct lookup
+[2024-01-04T14:09:19.223957 14316] Trying direct lookup
+[2024-01-04T14:09:19.224206 14068] Manifest key: 5623esol6966nl2u55gsl3ti4nuk4cnoo
+[2024-01-04T14:09:19.224230 14316] Manifest key: 807a9699ob1itlkhi6fbr5raam9rl8p8u
+[2024-01-04T14:09:19.224508 14068] Retrieved 5623esol6966nl2u55gsl3ti4nuk4cnoo from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/6/23esol6966nl2u55gsl3ti4nuk4cnooM)
+[2024-01-04T14:09:19.224586 14316] Retrieved 807a9699ob1itlkhi6fbr5raam9rl8p8u from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/0/7a9699ob1itlkhi6fbr5raam9rl8p8uM)
+[2024-01-04T14:09:19.226201 17812] Hostname: DESKTOP-F5GPF02
+[2024-01-04T14:09:19.226228 17812] Working directory: D:/Bureau/Dev/TP ML/Iris-Model/gui.build
+[2024-01-04T14:09:19.226245 17812] Compiler: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-01-04T14:09:19.226253 17812] Compiler type: gcc
+[2024-01-04T14:09:19.226705 17812] Source file: __loader.c
+[2024-01-04T14:09:19.226718 17812] Object file: __loader.o
+[2024-01-04T14:09:19.226937 17812] Trying direct lookup
+[2024-01-04T14:09:19.227161 17812] Manifest key: d7ea2s73t13v1bfh981da927ot40k80f4
+[2024-01-04T14:09:19.227404 17812] Retrieved d7ea2s73t13v1bfh981da927ot40k80f4 from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/7/ea2s73t13v1bfh981da927ot40k80f4M)
+[2024-01-04T14:09:19.243838 15376] === CCACHE 4.8.2 STARTED =========================================
+[2024-01-04T14:09:19.243889 15376] Configuration file: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-01-04T14:09:19.243947 15376] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-01-04T14:09:19.243947 15376] Config: (default) absolute_paths_in_stderr = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) base_dir = 
+[2024-01-04T14:09:19.243947 15376] Config: (environment) cache_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-01-04T14:09:19.243947 15376] Config: (default) compiler = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) compiler_check = mtime
+[2024-01-04T14:09:19.243947 15376] Config: (default) compiler_type = auto
+[2024-01-04T14:09:19.243947 15376] Config: (default) compression = true
+[2024-01-04T14:09:19.243947 15376] Config: (default) compression_level = 0
+[2024-01-04T14:09:19.243947 15376] Config: (default) cpp_extension = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) debug = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) debug_dir = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) depend_mode = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) direct_mode = true
+[2024-01-04T14:09:19.243947 15376] Config: (default) disable = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) extra_files_to_hash = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) file_clone = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) hard_link = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) hash_dir = true
+[2024-01-04T14:09:19.243947 15376] Config: (default) ignore_headers_in_manifest = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) ignore_options = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) inode_cache = true
+[2024-01-04T14:09:19.243947 15376] Config: (default) keep_comments_cpp = false
+[2024-01-04T14:09:19.243947 15376] Config: (environment) log_file = D:\Bureau\Dev\TP ML\Iris-Model\gui.build\ccache-11672.txt
+[2024-01-04T14:09:19.243947 15376] Config: (default) max_files = 0
+[2024-01-04T14:09:19.243947 15376] Config: (default) max_size = 5.0 GiB
+[2024-01-04T14:09:19.243947 15376] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-04T14:09:19.243947 15376] Config: (default) namespace = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) path = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) pch_external_checksum = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) prefix_command = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) prefix_command_cpp = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) read_only = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) read_only_direct = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) recache = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) remote_only = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) remote_storage = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) reshare = false
+[2024-01-04T14:09:19.243947 15376] Config: (default) run_second_cpp = true
+[2024-01-04T14:09:19.243947 15376] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-04T14:09:19.243947 15376] Config: (default) stats = true
+[2024-01-04T14:09:19.243947 15376] Config: (default) stats_log = 
+[2024-01-04T14:09:19.243947 15376] Config: (default) temporary_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-01-04T14:09:19.243947 15376] Config: (default) umask = 
+[2024-01-04T14:09:19.244027 15376] Command line: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o module.__main__.o -c -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src module.__main__.c
+[2024-01-04T14:09:19.248509 15376] Hostname: DESKTOP-F5GPF02
+[2024-01-04T14:09:19.248537 15376] Working directory: D:/Bureau/Dev/TP ML/Iris-Model/gui.build
+[2024-01-04T14:09:19.248550 15376] Compiler: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-01-04T14:09:19.248558 15376] Compiler type: gcc
+[2024-01-04T14:09:19.249005 15376] Source file: module.__main__.c
+[2024-01-04T14:09:19.249021 15376] Object file: module.__main__.o
+[2024-01-04T14:09:19.249289 15376] Trying direct lookup
+[2024-01-04T14:09:19.250228 15376] Manifest key: 2e369ucstgkhipauu6337jjleg3a8li18
+[2024-01-04T14:09:19.250367 15376] No 2e369ucstgkhipauu6337jjleg3a8li18 in local storage
+[2024-01-04T14:09:19.251226 15376] Running preprocessor
+nifest
+[2024-01-04T14:09:19.251244 17812] Result key: 8956vl0u22t8hq66q4h4b2d4ocleg878c
+[2024-01-04T14:09:19.251503 17812] Retrieved 8956vl0u22t8hq66q4h4b2d4ocleg878c from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/9/56vl0u22t8hq66q4h4b2d4ocleg878cR)
+[2024-01-04T14:09:19.251555 15376] Executing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src -E -o C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/cpp_stdout.tmp.5cQCEL.i module.__main__.c
+[2024-01-04T14:09:19.251728 17812] Reading embedded entry #0 .o (12207 bytes)
+[2024-01-04T14:09:19.251745 17812] Writing to __loader.o
+[2024-01-04T14:09:19.252197 17812] Succeeded getting cached result
+[2024-01-04T14:09:19.252257 17812] Result: direct_cache_hit
+[2024-01-04T14:09:19.252274 17812] Result: local_storage_hit
+[2024-01-04T14:09:19.252282 17812] Result: local_storage_read_hit
+[2024-01-04T14:09:19.252291 17812] Result: local_storage_read_hit
+[2024-01-04T14:09:19.252311 17812] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/stats.lock
+[2024-01-04T14:09:19.253568 17812] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/stats.lock
+[2024-01-04T14:09:19.254475 17812] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/stats.lock
+[2024-01-04T14:09:19.254578 17812] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/stats.lock
+[2024-01-04T14:09:19.266999 13624] === CCACHE 4.8.2 STARTED =========================================
+[2024-01-04T14:09:19.267054 13624] Configuration file: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-01-04T14:09:19.267067 13624] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-01-04T14:09:19.267067 13624] Config: (default) absolute_paths_in_stderr = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) base_dir = 
+[2024-01-04T14:09:19.267067 13624] Config: (environment) cache_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-01-04T14:09:19.267067 13624] Config: (default) compiler = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) compiler_check = mtime
+[2024-01-04T14:09:19.267067 13624] Config: (default) compiler_type = auto
+[2024-01-04T14:09:19.267067 13624] Config: (default) compression = true
+[2024-01-04T14:09:19.267067 13624] Config: (default) compression_level = 0
+[2024-01-04T14:09:19.267067 13624] Config: (default) cpp_extension = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) debug = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) debug_dir = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) depend_mode = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) direct_mode = true
+[2024-01-04T14:09:19.267067 13624] Config: (default) disable = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) extra_files_to_hash = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) file_clone = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) hard_link = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) hash_dir = true
+[2024-01-04T14:09:19.267067 13624] Config: (default) ignore_headers_in_manifest = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) ignore_options = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) inode_cache = true
+[2024-01-04T14:09:19.267067 13624] Config: (default) keep_comments_cpp = false
+[2024-01-04T14:09:19.267067 13624] Config: (environment) log_file = D:\Bureau\Dev\TP ML\Iris-Model\gui.build\ccache-11672.txt
+[2024-01-04T14:09:19.267067 13624] Config: (default) max_files = 0
+[2024-01-04T14:09:19.267067 13624] Config: (default) max_size = 5.0 GiB
+[2024-01-04T14:09:19.267067 13624] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-04T14:09:19.267067 13624] Config: (default) namespace = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) path = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) pch_external_checksum = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) prefix_command = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) prefix_command_cpp = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) read_only = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) read_only_direct = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) recache = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) remote_only = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) remote_storage = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) reshare = false
+[2024-01-04T14:09:19.267067 13624] Config: (default) run_second_cpp = true
+[2024-01-04T14:09:19.267067 13624] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-04T14:09:19.267067 13624] Config: (default) stats = true
+[2024-01-04T14:09:19.267067 13624] Config: (default) stats_log = 
+[2024-01-04T14:09:19.267067 13624] Config: (default) temporary_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-01-04T14:09:19.267067 13624] Config: (default) umask = 
+[2024-01-04T14:09:19.267141 13624] Command line: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o static_src\MainProgram.o -c -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src static_src\MainProgram.c
+[2024-01-04T14:09:19.272706 13624] Hostname: DESKTOP-F5GPF02
+[2024-01-04T14:09:19.272786 13624] Working directory: D:/Bureau/Dev/TP ML/Iris-Model/gui.build
+[2024-01-04T14:09:19.272812 13624] Compiler: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-01-04T14:09:19.272822 13624] Compiler type: gcc
+[2024-01-04T14:09:19.273727 13624] Source file: static_src\MainProgram.c
+[2024-01-04T14:09:19.273747 13624] Object file: static_src\MainProgram.o
+[2024-01-04T14:09:19.273985 13624] Trying direct lookup
+[2024-01-04T14:09:19.274373 13624] Manifest key: 75564eepida190suhcr69t4asf0ltcthu
+[2024-01-04T14:09:19.274635 13624] Retrieved 75564eepida190suhcr69t4asf0ltcthu from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/5/564eepida190suhcr69t4asf0ltcthuM)
+[2024-01-04T14:09:19.329504 14068] Got result key from manifest
+[2024-01-04T14:09:19.329541 14068] Result key: 7ad6rh8jbiogc5acg7dbn320ve4tng21s
+[2024-01-04T14:09:19.329756 14068] Retrieved 7ad6rh8jbiogc5acg7dbn320ve4tng21s from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/a/d6rh8jbiogc5acg7dbn320ve4tng21sR)
+[2024-01-04T14:09:19.330003 14068] Reading embedded entry #0 .o (17843 bytes)
+[2024-01-04T14:09:19.330018 14068] Writing to __constants.o
+[2024-01-04T14:09:19.330482 14068] Succeeded getting cached result
+[2024-01-04T14:09:19.330545 14068] Result: direct_cache_hit
+[2024-01-04T14:09:19.330557 14068] Result: local_storage_hit
+[2024-01-04T14:09:19.330566 14068] Result: local_storage_read_hit
+[2024-01-04T14:09:19.330575 14068] Result: local_storage_read_hit
+[2024-01-04T14:09:19.330592 14068] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2024-01-04T14:09:19.331328 14068] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2024-01-04T14:09:19.332910 14068] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2024-01-04T14:09:19.333016 14068] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2024-01-04T14:09:19.334992 14316] Got result key from manifest
+[2024-01-04T14:09:19.335028 14316] Result key: 00d5r8e6rgg4cuvlea21shn3c34e8k8di
+[2024-01-04T14:09:19.335297 14316] Retrieved 00d5r8e6rgg4cuvlea21shn3c34e8k8di from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/0/d5r8e6rgg4cuvlea21shn3c34e8k8diR)
+[2024-01-04T14:09:19.335544 14316] Reading embedded entry #0 .o (2651 bytes)
+[2024-01-04T14:09:19.335559 14316] Writing to __helpers.o
+[2024-01-04T14:09:19.336038 14316] Succeeded getting cached result
+[2024-01-04T14:09:19.336100 14316] Result: direct_cache_hit
+[2024-01-04T14:09:19.336111 14316] Result: local_storage_hit
+[2024-01-04T14:09:19.336118 14316] Result: local_storage_read_hit
+[2024-01-04T14:09:19.336126 14316] Result: local_storage_read_hit
+[2024-01-04T14:09:19.336144 14316] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/c/stats.lock
+[2024-01-04T14:09:19.337268 14316] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/c/stats.lock
+[2024-01-04T14:09:19.338345 14316] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/c/stats.lock
+[2024-01-04T14:09:19.338445 14316] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/c/stats.lock
+[2024-01-04T14:09:19.374332 13624] Got result key from manifest
+[2024-01-04T14:09:19.374364 13624] Result key: 28f5vssg00cug40o7o8v25msdprkl5md2
+[2024-01-04T14:09:19.374682 13624] Retrieved 28f5vssg00cug40o7o8v25msdprkl5md2 from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/8/f5vssg00cug40o7o8v25msdprkl5md2R)
+[2024-01-04T14:09:19.375007 13624] Reading embedded entry #0 .o (75231 bytes)
+[2024-01-04T14:09:19.375029 13624] Writing to static_src\MainProgram.o
+[2024-01-04T14:09:19.375633 13624] Succeeded getting cached result
+[2024-01-04T14:09:19.375686 13624] Result: direct_cache_hit
+[2024-01-04T14:09:19.375697 13624] Result: local_storage_hit
+[2024-01-04T14:09:19.375706 13624] Result: local_storage_read_hit
+[2024-01-04T14:09:19.375715 13624] Result: local_storage_read_hit
+[2024-01-04T14:09:19.375728 13624] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/8/stats.lock
+[2024-01-04T14:09:19.376891 13624] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/8/stats.lock
+[2024-01-04T14:09:19.377741 13624] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/8/stats.lock
+[2024-01-04T14:09:19.377832 13624] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/8/stats.lock
+[2024-01-04T14:09:19.496144 15120] === CCACHE 4.8.2 STARTED =========================================
+[2024-01-04T14:09:19.496186 15120] Configuration file: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-01-04T14:09:19.496195 15120] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-01-04T14:09:19.496195 15120] Config: (default) absolute_paths_in_stderr = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) base_dir = 
+[2024-01-04T14:09:19.496195 15120] Config: (environment) cache_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-01-04T14:09:19.496195 15120] Config: (default) compiler = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) compiler_check = mtime
+[2024-01-04T14:09:19.496195 15120] Config: (default) compiler_type = auto
+[2024-01-04T14:09:19.496195 15120] Config: (default) compression = true
+[2024-01-04T14:09:19.496195 15120] Config: (default) compression_level = 0
+[2024-01-04T14:09:19.496195 15120] Config: (default) cpp_extension = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) debug = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) debug_dir = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) depend_mode = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) direct_mode = true
+[2024-01-04T14:09:19.496195 15120] Config: (default) disable = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) extra_files_to_hash = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) file_clone = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) hard_link = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) hash_dir = true
+[2024-01-04T14:09:19.496195 15120] Config: (default) ignore_headers_in_manifest = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) ignore_options = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) inode_cache = true
+[2024-01-04T14:09:19.496195 15120] Config: (default) keep_comments_cpp = false
+[2024-01-04T14:09:19.496195 15120] Config: (environment) log_file = D:\Bureau\Dev\TP ML\Iris-Model\gui.build\ccache-11672.txt
+[2024-01-04T14:09:19.496195 15120] Config: (default) max_files = 0
+[2024-01-04T14:09:19.496195 15120] Config: (default) max_size = 5.0 GiB
+[2024-01-04T14:09:19.496195 15120] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-04T14:09:19.496195 15120] Config: (default) namespace = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) path = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) pch_external_checksum = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) prefix_command = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) prefix_command_cpp = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) read_only = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) read_only_direct = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) recache = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) remote_only = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) remote_storage = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) reshare = false
+[2024-01-04T14:09:19.496195 15120] Config: (default) run_second_cpp = true
+[2024-01-04T14:09:19.496195 15120] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-04T14:09:19.496195 15120] Config: (default) stats = true
+[2024-01-04T14:09:19.496195 15120] Config: (default) stats_log = 
+[2024-01-04T14:09:19.496195 15120] Config: (default) temporary_dir = C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-01-04T14:09:19.496195 15120] Config: (default) umask = 
+[2024-01-04T14:09:19.496250 15120] Command line: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o static_src\CompiledFunctionType.o -c -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src static_src\CompiledFunctionType.c
+[2024-01-04T14:09:19.500225 15120] Hostname: DESKTOP-F5GPF02
+[2024-01-04T14:09:19.500248 15120] Working directory: D:/Bureau/Dev/TP ML/Iris-Model/gui.build
+[2024-01-04T14:09:19.500261 15120] Compiler: C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-01-04T14:09:19.500269 15120] Compiler type: gcc
+[2024-01-04T14:09:19.500828 15120] Source file: static_src\CompiledFunctionType.c
+[2024-01-04T14:09:19.500840 15120] Object file: static_src\CompiledFunctionType.o
+[2024-01-04T14:09:19.501034 15120] Trying direct lookup
+[2024-01-04T14:09:19.501429 15120] Manifest key: e98bvoodcn5k9jqi2sf7b5oeicnbsp0hq
+[2024-01-04T14:09:19.501631 15120] Retrieved e98bvoodcn5k9jqi2sf7b5oeicnbsp0hq from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/9/8bvoodcn5k9jqi2sf7b5oeicnbsp0hqM)
+[2024-01-04T14:09:19.607882 15120] Got result key from manifest
+[2024-01-04T14:09:19.607917 15120] Result key: 4f2aq82d15rbus223lgohf2t4maudaog4
+[2024-01-04T14:09:19.609360 15120] Retrieved 4f2aq82d15rbus223lgohf2t4maudaog4 from local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/f/2aq82d15rbus223lgohf2t4maudaog4R)
+[2024-01-04T14:09:19.612178 15120] Reading embedded entry #0 .o (3754140 bytes)
+[2024-01-04T14:09:19.612213 15120] Writing to static_src\CompiledFunctionType.o
+[2024-01-04T14:09:19.614337 15120] Succeeded getting cached result
+[2024-01-04T14:09:19.614674 15120] Result: direct_cache_hit
+[2024-01-04T14:09:19.614690 15120] Result: local_storage_hit
+[2024-01-04T14:09:19.614698 15120] Result: local_storage_read_hit
+[2024-01-04T14:09:19.614706 15120] Result: local_storage_read_hit
+[2024-01-04T14:09:19.614727 15120] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:19.615904 15120] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:19.623138 15120] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:19.623255 15120] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:20.336488 15376] Got result key from preprocessor
+[2024-01-04T14:09:20.336524 15376] Result key: 3d626mpsr5qtiil4s75r4rbrefa4agl0s
+[2024-01-04T14:09:20.336675 15376] No 3d626mpsr5qtiil4s75r4rbrefa4agl0s in local storage
+[2024-01-04T14:09:20.336698 15376] Running real compiler
+[2024-01-04T14:09:20.337250 15376] Executing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -flto=8 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\include -I. -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\include -IC:\Users\Remzi\AppData\Local\Programs\Python\PYTHON~2\Lib\SITE-P~1\nuitka\build\static_src -c -fdiagnostics-color -o module.__main__.o module.__main__.c
+[2024-01-04T14:09:21.736473 15376] Using default compression level 1
+[2024-01-04T14:09:21.736641 15376] Storing embedded entry #0 .o (215207 bytes) from module.__main__.o
+[2024-01-04T14:09:21.738074 15376] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_3d.lock
+[2024-01-04T14:09:21.738268 15376] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_3d.lock
+[2024-01-04T14:09:21.738633 15376] Stored 3d626mpsr5qtiil4s75r4rbrefa4agl0s in local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/d/626mpsr5qtiil4s75r4rbrefa4agl0sR)
+[2024-01-04T14:09:21.738707 15376] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2024-01-04T14:09:21.738888 15376] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2024-01-04T14:09:21.740055 15376] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2024-01-04T14:09:21.740145 15376] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2024-01-04T14:09:21.740160 15376] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_3d.lock
+[2024-01-04T14:09:21.740253 15376] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_3d.lock
+[2024-01-04T14:09:21.761389 15376] Added result key to manifest 2e369ucstgkhipauu6337jjleg3a8li18
+[2024-01-04T14:09:21.761424 15376] Using default compression level 1
+[2024-01-04T14:09:21.762626 15376] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_2e.lock
+[2024-01-04T14:09:21.762799 15376] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_2e.lock
+[2024-01-04T14:09:21.763199 15376] Stored 2e369ucstgkhipauu6337jjleg3a8li18 in local storage (C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/e/369ucstgkhipauu6337jjleg3a8li18M)
+[2024-01-04T14:09:21.763264 15376] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2024-01-04T14:09:21.763453 15376] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2024-01-04T14:09:21.764877 15376] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2024-01-04T14:09:21.764985 15376] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2024-01-04T14:09:21.764998 15376] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_2e.lock
+[2024-01-04T14:09:21.765080 15376] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_2e.lock
+[2024-01-04T14:09:21.765304 15376] Result: cache_miss
+[2024-01-04T14:09:21.765317 15376] Result: direct_cache_miss
+[2024-01-04T14:09:21.765326 15376] Result: local_storage_miss
+[2024-01-04T14:09:21.765335 15376] Result: local_storage_read_miss
+[2024-01-04T14:09:21.765343 15376] Result: local_storage_read_miss
+[2024-01-04T14:09:21.765352 15376] Result: local_storage_write
+[2024-01-04T14:09:21.765360 15376] Result: local_storage_write
+[2024-01-04T14:09:21.765368 15376] Result: preprocessed_cache_miss
+[2024-01-04T14:09:21.765380 15376] Acquiring C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:21.765671 15376] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:21.767294 15376] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:21.767422 15376] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/0/stats.lock
+[2024-01-04T14:09:21.767536 15376] Trying to acquire C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-01-04T14:09:21.767795 15376] Acquired C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-01-04T14:09:21.773437 15376] No automatic cleanup needed (size 4.9 MiB, files 33, max size 5.0 GiB)
+[2024-01-04T14:09:21.773473 15376] Releasing C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-01-04T14:09:21.773593 15376] Released C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-01-04T14:09:21.773806 15376] Unlink C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stderr.tmp.tDyfyG.tmp
+[2024-01-04T14:09:21.773973 15376] Unlink C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stdout.tmp.0Mpksy.tmp
+[2024-01-04T14:09:21.774105 15376] Unlink C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stderr.tmp.uoCN4R.tmp
+[2024-01-04T14:09:21.774781 15376] Unlink C:\Users\Remzi\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/cpp_stdout.tmp.5cQCEL.i
